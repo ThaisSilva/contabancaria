@@ -4,21 +4,19 @@ public class Conta {
 
     double saldo = 2500.00;
     Scanner ler = new Scanner(System.in);
-    public int consutarSaldo()
+    public void consutarSaldo()
     {
         System.out.println("Seu saldo é: R$" + saldo);
-        return (int) saldo;
     }
 
-    public int receberValor ()
+    public void receberValor ()
     {
         System.out.println("Digite o valor a ser recebido");
         double valorRecebido = ler.nextDouble();
         saldo = saldo + valorRecebido;
         System.out.println("Valor recebido! Saldo atualizado: R$" + saldo);
-        return (int) saldo;
     }
-    public int transferirValor()
+    public void transferirValor()
     {
         System.out.println("Digite o valor a ser transferido");
         double valorTransferido = ler.nextDouble();
@@ -28,7 +26,6 @@ public class Conta {
         } else {
             System.out.println("Não há saldo suficiente para essa operação");
         }
-        return (int) saldo;
     }
 
 }
